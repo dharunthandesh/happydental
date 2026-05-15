@@ -542,55 +542,99 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
     .main-navbar {
-        flex-wrap: wrap;
         padding: 15px 20px;
+        flex-wrap: nowrap;
     }
     
     .nav-links {
-        display: none; /* Can add hamburger logic later */
+        display: none;
+    }
+
+    .nav-btn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+        min-width: auto;
     }
     
-    .services-clean-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .dentists-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-links {
-        flex-wrap: wrap;
-        gap: 40px;
+    .header-stats {
+        padding: 20px 0;
+        gap: 20px;
     }
     
     .section-heading {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        margin-bottom: 25px;
     }
     
     .stat-left h2, .stat-right h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        margin-bottom: 5px;
+    }
+    
+    .services-clean-grid, .dentists-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .clean-service-card {
-        padding: 30px 20px;
+        padding: 25px 20px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
     }
     
     .contact-card {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        padding: 15px;
+    }
+    
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    
+    .contact-title {
+        margin-bottom: 2px;
+        display: block;
+    }
+
+    .contact-detail {
+        display: block;
     }
     
     .about-image-wrapper {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     
     .experience-badge-green {
         padding: 15px 20px;
+        bottom: 10px;
+        right: 10px;
     }
     
     .experience-badge-green h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .clean-features-list li {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .clean-features-list i {
+        margin-top: 5px;
+        min-width: 20px;
     }
 }
